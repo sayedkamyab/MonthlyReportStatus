@@ -31,6 +31,8 @@
       
       //alert('Successfully processed!')
       //alert($('#zone').val());
+      $('span').empty()
+      $('span').append($('#zone').val())
       var flr = data.filter(function(entry){
         return entry.Zone === $('#zone').val()
       })
@@ -64,17 +66,17 @@
     <body>
       <div class="container">
         <p>In His Name and By The Grace of His Last Hujjat (a.t.f.s)</p>        
-        <h3>Monthly Report Status 2020</h3>
+        <h3>Monthly Report Status 2020 of <span></span></h3>
         <label>Select Zone :</label>
         <select id="zone" class="target">
           <option value="Z1">Z1</option>
           <option value="Z2">Z2</option>
           <option value="Z3">Z3</option>
           <option value="Z4">Z4</option>
-          <option>Z5</option>
-          <option>Z6</option>
-          <option>Z7</option>
-          <option>Z8</option>
+          <option value="Z5">Z5</option>
+          <option value="Z6">Z6</option>
+          <option value="Z7">Z7</option>
+          <option value="Z8">Z8</option>
         </select>
         <br><br>
     <table class="table table-bordered">
