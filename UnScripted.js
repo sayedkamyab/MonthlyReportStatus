@@ -26,7 +26,7 @@ $(function()
     }
   
     function showInfo(data, tabletop) {      
-      alert('Successfully processed!')      
+      //alert('Successfully processed!')      
       $('span').empty()
       $('span').append($('#zone').val())
       var fdata = data.filter(function(entry){
