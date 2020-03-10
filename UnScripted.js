@@ -32,6 +32,7 @@ $(function()
       var fdata = data.filter(function(entry){
         return entry.Zone === $('#zone').val()
       })
+      debugger;
       var trh;
       trh = $('<tr/>');    
       trh.append("<th>Level</th>");
